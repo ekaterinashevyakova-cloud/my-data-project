@@ -1,0 +1,20 @@
+CREATE TABLE raw_posts (
+    id SERIAL PRIMARY KEY,
+    post_text TEXT,
+    likes INTEGER
+);
+
+CREATE TABLE cleaned_posts (
+    id SERIAL PRIMARY KEY,
+    cleaned_text TEXT
+);
+
+CREATE TABLE keywords (
+    id SERIAL PRIMARY KEY,
+    keyword TEXT
+);
+
+CREATE TABLE insights (
+    id SERIAL PRIMARY KEY,
+    insight TEXT
+);
